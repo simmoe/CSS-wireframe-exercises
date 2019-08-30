@@ -8,16 +8,17 @@ body, html{
 .main{
     display:flex;
     height:80vh;
+    flex-wrap:wrap;
 }
 
 .container {
-    display:inline-flex;
+    display:flex;
     flex-wrap:wrap;
     width:60vw;
 }
 
 .aside{
-    display:inline-flex;
+    display:flex;
     width:40vw;
 }
 .footer{

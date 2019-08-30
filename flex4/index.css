@@ -1,0 +1,45 @@
+* {
+    margin:0;
+    padding:0;
+    box-align: border-box;
+    background-color: lightgray;
+
+}
+
+.header {
+    display:flex;
+    height:10vh;
+}
+.menu{
+    text-align:center;
+    line-height: 10vh;
+    background-color:gray;
+    flex-grow:1;
+    border-right:1px solid white;
+}
+.menu:last-child{
+    border-right:none;
+}
+
+.footer{
+    display:flex;
+    height:30vh;
+}
+.main{
+    display:flex;
+    height:60vh;
+}
+
+.item{
+    padding:16px;
+    border: 1px solid gray;
+}
+.item1, .item2{
+    flex:20vw;
+}
+.item3{
+    flex:60vw;
+}
+.footer div{
+    flex:50vw;
+}
