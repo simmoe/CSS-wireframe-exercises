@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+}
+.nav {
+    height: 5vh;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap:20px;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    height: 100vh;
+    padding: 100px;
+}
+#orange {
+    background-color: #FFC100;
+}
+#yellow {
+    background-color: #FFEC19;
+}
+#red {
+    background-color: #F6412D;
+}
+@media(max-width:800px) {
+    .nav {
+        grid-auto-flow: row;
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+
+}

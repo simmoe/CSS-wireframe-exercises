@@ -1,0 +1,55 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+  height:20vh;
+  background-color: royalblue;
+  display:grid;
+  align-items: flex-end;
+}
+header h1{
+  color:white;
+  text-align: center;
+}
+
+main{
+  min-height:60vh;
+  background-color: dodgerblue;
+}
+footer{
+  height:20vh;
+  background-color: royalblue;
+  color:white;
+  display:grid;
+  align-items:center;
+  justify-content:center;
+}
+nav{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+  color:white;
+  padding: 20px 0 20px 0;
+}
+
+main{
+  display:grid;
+  align-items: center;
+}
+article{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content:space-around;
+}
+article .item{
+  background-color:white;
+  margin:20px;
+  padding:20px;
+}
+

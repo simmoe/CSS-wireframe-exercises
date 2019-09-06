@@ -1,0 +1,34 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*grid-template areas is a really weird, but easy to implement, strategy where you tell css to apply grid layout in a direct wireframish lingo:*/
+
+/* First assign names to your grid-areas */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+/* Then set-up their lay-out */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header right'
+      'menu main main main main right'
+      'menu footer footer footer footer right';
+    grid-gap: 1px;
+    background-color: #eee;
+  }
+
+.item{
+    background-color: deepskyblue;
+    padding:40px;
+    /*Easy option to middle vertical align items*/
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}

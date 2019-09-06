@@ -1,0 +1,41 @@
+body, html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    padding:15px;
+    background-color:#eee;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:8px;
+}
+
+main article {
+    background-color: white;
+}
+
+main article img{
+    width:100%;
+}
+
+main article a{
+    text-decoration: none;
+}
+main article h1, main article p {
+    padding:4px 0 4px 8px;
+    color:black;
+}
+
+@media (max-width:1024px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:600px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}

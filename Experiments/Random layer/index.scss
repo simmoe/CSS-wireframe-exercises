@@ -1,0 +1,126 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 200;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+.aside {
+    position: fixed;
+    top: 50vh;
+    left: 20px;
+}
+
+.aside a {
+    color: gray;
+    display: block;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.aside:hover~div .container .item {
+    background-color:black;
+    left: 0;
+    top: 0;
+}
+
+.aside a:hover {
+    transform: scale(1.2);
+}
+
+.containers {
+    margin-left: 10vw;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.item {
+    text-align: center;
+    background-color: lightgray;
+    transition: all 1s;
+    opacity: .7;
+    -webkit-box-shadow: 10px 10px 89px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 89px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 89px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.item:hover {
+    background-color: black;
+    transform: scale(1.2);
+    -webkit-box-shadow: 10px 10px 89px 0px rgba(0, 0, 0, 0.95);
+    -moz-box-shadow: 10px 10px 89px 0px rgba(0, 0, 0, 0.95);
+    box-shadow: 10px 10px 89px 0px rgba(0, 0, 0, 0.95);
+    z-index: 10;
+}
+
+//Create a list of sizes
+$sizes: ('1':20vh,
+    '2':30vh,
+    '3':15vh,
+    '4':35vh,
+    '5':50vh,
+    '6':20vh);
+
+//Create a list of z-indexes
+$z-indexes: ('1':2,
+    '2':1,
+    '3':3,
+    '4':0,
+    '5':6,
+    '6':3);
+
+$top-margins: ('1':0,
+    '2':-30,
+    '3':80,
+    '4':-100,
+    '5':-100,
+    '6':-40);
+
+$left-margins: ('1':0,
+    '2':-30,
+    '3':80,
+    '4':-380,
+    '5':-420,
+    '6':-480);
+
+//Run through the classnames - append the size name - and set the property.
+@each $name,
+$size in $sizes {
+    .item#{$name} {
+        height: $size;
+        line-height: $size;
+        position: relative;
+    }
+}
+
+@each $name,
+$z-index in $z-indexes {
+    .item#{$name} {
+        z-index: $z-index;
+    }
+}
+
+@each $name,
+$top-margin in $top-margins {
+    .item#{$name} {
+        top: #{$top-margin}px;
+    }
+}
+
+@each $name,
+$left-margin in $left-margins {
+    .item#{$name} {
+        left: #{$left-margin}px;
+    }
+}

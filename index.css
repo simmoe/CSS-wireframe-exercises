@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding:0;
+
+}
+
+section{
+    padding-top:20vh;
+    padding-left:20vh;
+    height: 100vh;
+}
+
+#side1{
+    background-color: dodgerblue;
+}
+
+h1{
+    font-size: 44px;
+    color:white;
+}

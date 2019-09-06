@@ -1,0 +1,21 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.row{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+.column img {
+    width:100%;
+    vertical-align: middle;
+    border:1px solid lightgray;
+}
+
+@media (max-width:800px){
+    .row{
+        grid-template-columns: auto auto;
+    }
+}
