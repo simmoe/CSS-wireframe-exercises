@@ -1,0 +1,42 @@
+html,
+body {
+    background-color: #111;
+}
+
+section {
+    display: grid;
+    gap:12px;
+    grid-template-areas: 
+        "main main main main main main aside aside"
+        "bottom-left bottom-left bottom-center bottom-center bottom-center bottom-center bottom-right bottom-right"        
+        ;
+    height:100vh;
+    grid-template-rows: 2fr 1fr;
+}
+
+div {
+    padding: 10px;
+    background-color: white;
+}
+
+.main{
+    background-color: salmon;
+    grid-area: main;
+}
+
+.aside{
+    background-color:orchid;
+    grid-area: aside;
+}
+.bottom-left{
+    background-color:steelblue;
+    grid-area: bottom-left;
+}
+.bottom-center{
+    background-color:lightgray;
+    grid-area: bottom-center;
+}
+.bottom-right{
+    background-color:olive;
+    grid-area: bottom-right;
+}

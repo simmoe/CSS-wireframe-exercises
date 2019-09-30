@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: gray;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding:20px;
+}
+
+nav a:hover{
+    background-color: #111;
+}
+
+
+@media only screen and (max-width:500px) {
+    nav {
+        height:auto;
+        grid-auto-flow: row;
+    }
+}
