@@ -14,4 +14,7 @@ This is some basic exercises with flexbox and grid in css.
 ## Grid
 
 -  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/grid-basic-32/">Basic 32 element grid</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/grid-auto-fit-basic/">grid auto fit</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/grid-basic-areas/">grid areas</a>
+
 
