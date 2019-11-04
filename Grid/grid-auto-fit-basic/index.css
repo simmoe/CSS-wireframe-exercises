@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    background-color:orange;
+}
+
+main{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); 
+
+    height:100vh;
+    gap:2px;
+}
+
+div{
+    background-color:white;
+}
+
+div.center{
+    height:100%;
+    display:grid;
+    place-items:center;
+}
+
