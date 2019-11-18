@@ -1,0 +1,71 @@
+ /* ------------------------ GRID 04 32-GRID----------------------  */
+
+html,
+body {
+    margin:0;
+    background-color: orange;
+}
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: grid;
+    padding: 12px;
+    gap:12px;
+    min-height:100vh;
+
+    /* AUTO FLOW MUST BE OMITTED WHEN USING TEMPLATES*/
+    /* grid-auto-flow:column;   */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns: 40px 40px 40px 80px;
+    justify-content:space-between;
+    justify-content:space-around;
+    justify-content:center;
+    justify-content:end;
+    justify-content:start;
+    
+    grid-template-columns: 40px 40px 40px 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 4fr;
+    grid-template-columns: repeat(8, 1fr);
+
+
+}
+
+div {
+    padding: 10px;
+    background-color: white;
+}
+
+section div:first-child{
+    /* grid-column: 1 / 4; */
+    /* grid-column: 2 / 6; */
+    /* grid-row: 2 / 6; */
+    /* grid-column: 1 / 9; */
+    /* grid-row: 4 / 6; */
+}
+
+section div:nth-of-type(3n){
+    /* opacity:0; */
+    /* background-color:purple; */
+}
+
+ /* ------------------------ TASK ----------------------  */
+/* MAKE A WEBPAGE WITH a 3x3 grid of images around a large centered image */
+
+/* SOLLUTION */
+
+/* main {
+    height:100vh;
+    width:100vw;
+    display:grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    gap:1rem;
+    padding:1rem;
+} */
+
+

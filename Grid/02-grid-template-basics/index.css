@@ -1,0 +1,52 @@
+/* --------------------------------- GRID 02 TEMPLATES---------------------- */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main{
+    display:grid;
+    gap:.5rem;
+    padding:.5rem;
+
+    /* basics inline axis: justify-content*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+    /* block axis */
+    grid-template-rows: 200px 500px;
+    grid-template-rows: 80vh 20vh;
+    /* padding and gap problems */
+    height:100vh;
+    grid-template-rows: 80% 20%;
+    /* solves some of it, but not entirely */
+
+    /* often better with auto when we have a set size */
+    grid-template-rows: 80vh auto;
+
+    /* even better with fractions */
+    /* we are all free to set templates */
+    grid-template-columns: 2fr 4fr 6fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main section {
+    color:white;
+    min-width: 100px;
+    min-height:100px;
+    background:#4285F4;
+
+    /* grid in grid */
+    display:grid;
+    place-items: center;
+}
+
+/* --------------------------------- TASK ---------------------- */
+/* MAKE A WEBPAGE WHERE 9 SQUARES TAKE UP THE FULL PAGE WIDTH AND HEIGHT */
