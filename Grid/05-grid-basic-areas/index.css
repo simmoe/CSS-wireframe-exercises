@@ -12,10 +12,11 @@ body {
 
 section {
     display: grid;
-    gap: 12px;
+    gap: 1rem;
+    padding:1rem;
     grid-template-areas:
         "main main main main main main aside aside"
-        "bottom-left bottom-left bottom-center bottom-center bottom-center bottom-center bottom-right bottom-right"
+        "center-left center-left center-center center-center center-center center-center center-right center-right"
         "footer footer footer footer footer footer footer footer"
     ;
     height: 100vh;
@@ -36,19 +37,19 @@ div {
     grid-area: aside;
 }
 
-.bottom-left {
+.center-left {
     background-color: steelblue;
-    grid-area: bottom-left;
+    grid-area: center-left;
 }
 
-.bottom-center {
+.center-center {
     background-color: lightgray;
-    grid-area: bottom-center;
+    grid-area: center-center;
 }
 
-.bottom-right {
+.center-right {
     background-color: olive;
-    grid-area: bottom-right;
+    grid-area: center-right;
 }
 .footer{
     background-color: #4285F4;;
