@@ -3,23 +3,8 @@ This is some basic exercises with flexbox and grid in css. CSS flex and grid mak
 
 Most people tend to learn flex first - I honestly think grid solves most of the problems we may have, so if you´re not specifically interested in flex for some reason, move directly to grid. 
 
-## Flex
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex1/">Flex 1</a>
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex2/">Flex 2</a>
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex3/">Flex 3</a>
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex4/">Flex 4</a>
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex5/">Flex 5</a>
-
-## Grid
-
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/01-grid-basic/">Basic css grid terminology</a>
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/02-grid-template-basics/">Grid templates</a>
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/03-grid-auto-fit-basic/">Grid auto fit and the minmax function</a>
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/04-grid-basic-32/">A grid with 32 divs</a>
--  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/05-grid-basic-areas/">Grid areas</a>
-
-### Grid exercises
-Now that you´ve seen the basic concepts, let´s try to look at some exercises. For each picture below, try to make a webpage with css grid, that solves the problem.
+### Exercises
+For each picture below, try to make a webpage with css grid, that solves the problem.
 
 #### Justify content in columns
 Basically a grid constists of a grid container with some elements inside. The grid container is where we set the display property, and do the layout. The items inside the container can be any HTML element - in this example they are just empty div´s.
@@ -119,5 +104,24 @@ What this tells CSS is to give aside 2 fractions and center 4 fractions in the t
 Try to make a main container with 6 elements inside. Give these elements each a unique class or id, and name this in css with grid-area. The final page should look like this:
 
 <img src="https://github.com/simmoe/CSS-wireframe-exercises/blob/master/Grid/099-grid-exercises/areas.png?raw=true" alt="exercises">
+
+-----
+
+## Demos
+## Flex
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex1/">Flex 1</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex2/">Flex 2</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex3/">Flex 3</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex4/">Flex 4</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Flex/flex5/">Flex 5</a>
+
+## Grid
+
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/01-grid-basic/">Basic css grid terminology</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/02-grid-template-basics/">Grid templates</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/03-grid-auto-fit-basic/">Grid auto fit and the minmax function</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/04-grid-basic-32/">A grid with 32 divs</a>
+-  <a href="https://simmoe.github.io/CSS-wireframe-exercises/Grid/05-grid-basic-areas/">Grid areas</a>
+
 
 
